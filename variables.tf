@@ -7,8 +7,6 @@ variable "AWS_REGION" {
 
 variable "PRIVATE_KEY_PATH" {
 
-  // default = "london-region-key-pair"
-  // default = "/home/pankajsharma/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair"
   default = "~/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair"
 
 
@@ -16,8 +14,6 @@ variable "PRIVATE_KEY_PATH" {
 
 variable "PUBLIC_KEY_PATH" {
 
-  // default = "london-region-key-pair.pub"
-  // default = "/home/pankajsharma/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair.pub"
   default = "~/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair.pub"
 
 }
@@ -41,6 +37,6 @@ variable "INSTANCE_TYPE" {
 }
 
 variable "INSTANCE_COUNT" {
-  default = 2
+  default = 1
 }
 

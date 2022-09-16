@@ -13,11 +13,12 @@ terraform {
 
 terraform {
   backend "s3" {
-    # TF state files gets uploaded in this bucket !!!
     
+    # TF state files gets uploaded in this bucket !!!
+
     bucket         = "terraform-backend-state-ps07101971"
-    key            = "global/s3/terraform.tfstate"
-    region         = "us-east-2"
+    key            = "dev/terraform.tfstate"
+    region         = "eu-west-2"
 
   }
 }
