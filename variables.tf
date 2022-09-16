@@ -7,14 +7,13 @@ variable "AWS_REGION" {
 
 variable "PRIVATE_KEY_PATH" {
 
-  default = "~/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair"
-
+  default = "/home/pankajsharma/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair"
 
 }
 
 variable "PUBLIC_KEY_PATH" {
 
-  default = "~/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair.pub"
+  default = "/home/pankajsharma/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair.pub"
 
 }
 
