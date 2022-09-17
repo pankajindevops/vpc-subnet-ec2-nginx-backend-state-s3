@@ -14,8 +14,10 @@ crash.log
 crash.*.log
 
 # Exclude key-pair files
-key-pair
-key-pair.pub
+# key-pair
+# key-pair.pub
+
+  key*
 
 # Exclude tf.out file
 tf.out
