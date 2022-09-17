@@ -5,9 +5,9 @@ terraform {
 
     aws = {
 
-      source = "hashicorp/aws"
-      // version = "~> 4.30.0"
-      version = "~> 3.74.2"
+      source  = "hashicorp/aws"
+      version = "~> 4.30.0"
+      // version = "~> 3.74.2"
     }
   }
 }
@@ -26,6 +26,9 @@ terraform {
 
 provider "aws" {
 
-  region  = var.AWS_REGION
-  profile = "default"
+  shared_credentials_file = "/home/pankajsharma/.aws/credentials"
+  profile                 = "default"
+
+  region = var.AWS_REGION
+
 }
