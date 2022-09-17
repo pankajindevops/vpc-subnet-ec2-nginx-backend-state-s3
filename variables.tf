@@ -6,13 +6,13 @@ variable "AWS_REGION" {
 }
 
 variable "ACCESS_KEY" {
-  
-  default = "AKIARJF4TLU4PYBAD2VA"
+
+  default = ""
 }
 
 variable "SECRET_KEY" {
-  
-  default = "/EwvDCL7foFPsuJmrpp2WvBi1h3ht5JGXF5R9VKV"
+
+  default = ""
 }
 
 variable "PRIVATE_KEY_PATH" {
