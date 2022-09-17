@@ -1,6 +1,7 @@
 # Exclude .git and .terraform files
 **/.git
 **/.terraform
+.gitignore
 
 # Local .terraform directories
 /.terraform/
