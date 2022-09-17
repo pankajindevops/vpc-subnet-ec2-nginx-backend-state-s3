@@ -2,34 +2,16 @@
 
 variable "AWS_REGION" {
 
-  default = "eu-west-2"
+  default = "us-east-1"
 }
 
-variable "ACCESS_KEY" {
 
-  default = ""
+variable "INSTANCE_TYPE" {
+  default = "t2.micro"
 }
 
-variable "SECRET_KEY" {
-
-  default = ""
-}
-
-variable "PRIVATE_KEY_PATH" {
-
-  default = "/home/pankajsharma/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair"
-
-}
-
-variable "PUBLIC_KEY_PATH" {
-
-  default = "/home/pankajsharma/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair.pub"
-
-}
-
-variable "EC2_USER" {
-
-  default = "ubuntu"
+variable "INSTANCE_COUNT" {
+  default = 1
 }
 
 variable "AMI" {
@@ -41,11 +23,19 @@ variable "AMI" {
   }
 }
 
-variable "INSTANCE_TYPE" {
-  default = "t2.micro"
+variable "PRIVATE_KEY_PATH" {
+
+  default = "/home/pankajsharma/terraform/scripts/vpc-subnet-ec2-nginx-backend-state-s3/key-pair-01"
+
 }
 
-variable "INSTANCE_COUNT" {
-  default = 1
+variable "PUBLIC_KEY_PATH" {
+
+  default = "/home/pankajsharma/terraform/scripts/vpc-subnet-ec2-nginx-backend-state-s3/key-pair-01.pub"
+
 }
 
+variable "EC2_USER" {
+
+  default = "ubuntu"
+}

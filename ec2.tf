@@ -14,6 +14,7 @@ resource "aws_instance" "ec2-instance" {
   # the Public SSH Key
   key_name = aws_key_pair.key-pair.id
 
+
   # Output the Public IP of EC2 Instance to text file
   provisioner "local-exec" {
 
@@ -51,6 +52,6 @@ resource "aws_instance" "ec2-instance" {
 
 resource "aws_key_pair" "key-pair" {
 
-  key_name   = "key-pair"
+  key_name   = "key-pair-01"
   public_key = file("${var.PUBLIC_KEY_PATH}")
 }
