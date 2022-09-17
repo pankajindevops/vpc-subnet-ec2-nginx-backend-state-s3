@@ -18,20 +18,20 @@ variable "AMI" {
 
   default = {
 
-    eu-west-2 = "ami-0fb391cce7a602d1f"
     us-east-1 = "ami-052efd3df9dad4825"
+    eu-west-2 = "ami-0fb391cce7a602d1f"
   }
 }
 
 variable "PRIVATE_KEY_PATH" {
 
-  default = "/home/pankajsharma/terraform/scripts/vpc-subnet-ec2-nginx-backend-state-s3/key-pair-01"
+  default = "/home/pankajsharma/terraform/keys/key-pair-01"
 
 }
 
 variable "PUBLIC_KEY_PATH" {
 
-  default = "/home/pankajsharma/terraform/scripts/vpc-subnet-ec2-nginx-backend-state-s3/key-pair-01.pub"
+  default = "/home/pankajsharma/terraform/keys/key-pair-01.pub"
 
 }
 
