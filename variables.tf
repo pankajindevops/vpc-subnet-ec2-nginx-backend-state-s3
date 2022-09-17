@@ -5,6 +5,16 @@ variable "AWS_REGION" {
   default = "eu-west-2"
 }
 
+variable "ACCESS_KEY" {
+  
+  default = "AKIARJF4TLU4PYBAD2VA"
+}
+
+variable "SECRET_KEY" {
+  
+  default = "/EwvDCL7foFPsuJmrpp2WvBi1h3ht5JGXF5R9VKV"
+}
+
 variable "PRIVATE_KEY_PATH" {
 
   default = "/home/pankajsharma/terraform/scripts/tf-vpc-subnet-ec2-nginx/key-pair"
